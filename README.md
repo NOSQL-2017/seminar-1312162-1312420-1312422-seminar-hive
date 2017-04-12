@@ -1,10 +1,11 @@
-# Seminar- *Tên đề tài*
+# Seminar- *HIVE*
 
 **Tên đề tài** là một repository trong đề tài tìm hiểu của lớp Chuyên đề chọn lọc trong Hệ thống thông tin.
 
 Thành viên:
-* [ ] **MSSV1** Tên sinh viên 1 (tên tài khoản github)
-* [ ] **MSSV2** Tên sinh viên 2 (tên tài khoản github)
+* [ ] **1312162** Phạm Văn Hà (HaPham1107)
+* [ ] **1312420** Nguyễn Đình Phát (tên tài khoản github)
+* [ ] **1312422** Nguyễn Lê Duy Phát (tên tài khoản github)
 
 URL: **Link github page**
 
