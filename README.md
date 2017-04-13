@@ -4,7 +4,7 @@
 
 Thành viên:
 * [ ] **1312162** Phạm Văn Hà (HaPham1107)
-* [ ] **1312420** Nguyễn Đình Phát (tên tài khoản github)
+* [ ] **1312420** Nguyễn Đình Phát (NLDPhat)
 * [ ] **1312422** Nguyễn Lê Duy Phát (tên tài khoản github)
 
 URL: **Link github page**
