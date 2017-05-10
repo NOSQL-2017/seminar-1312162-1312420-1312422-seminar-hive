@@ -3,7 +3,7 @@
 **Tên đề tài** là một repository trong đề tài tìm hiểu của lớp Chuyên đề chọn lọc trong Hệ thống thông tin.
 
 Thành viên:
-* [x ] **1312162** Phạm Văn Hà (HaPham1107)
+* [x] **1312162** Phạm Văn Hà (HaPham1107)
 * [x] **1312420** Nguyễn Đình Phát 
 * [x] **1312422** Nguyễn Lê Duy Phát (NLDPhat)
 
