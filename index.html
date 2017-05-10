@@ -58,7 +58,7 @@ Ngày nay, xã hội càng phát triển nên nhu cầu sử dụng mạn
 </span></p>
 
 
-<h2 style="text-align: justify;"><strong><span style="font-family: verdana, geneva, sans-serif; font-size: 16px;">Kiến trúc của Apache Hive</span></strong></h2>
+<h2 style="text-align: justify;"><strong><span style="font-family: verdana, geneva, sans-serif; font-size: 16px;">Kiến trúc của Apache Hive và các thành phần liên quan</span></strong></h2>
 <ul>
 <li style="text-align: justify;"><a><strong><span style="font-family: verdana, geneva, sans-serif; font-size: 12px;">Interface(UI): Hive cung cấp một giao diện web để tương tác với HDFS. Tương tác command line.</span></strong></a></li>
 <li style="text-align: justify;"><a><strong><span style="font-family: verdana, geneva, sans-serif; font-size: 12px;">	HDFS: lưu trữ dữ liệu.</span></strong></a></li>
@@ -81,8 +81,49 @@ Ngày nay, xã hội càng phát triển nên nhu cầu sử dụng mạn
 </ul>
 
 <h2 style="text-align: justify;"><strong><span style="font-family: verdana, geneva, sans-serif; font-size: 16px;">Cấu trúc dữ liệu lưu trữ trong Hive</span></strong></h2>
+
 <p style="text-align: justify;"><img class="aligncenter size-full wp-image-39181" src="./hinh5.png" ></p>
 
+
+<p style="text-align: justify;"><span style="font-family: verdana, geneva, sans-serif; font-size: 14px;">Dữ liệu trong Hive có thể được phân loại thành ba loại cấp sau: 
+</span></p>
+<ul>
+<li style="text-align: justify;"><a><strong><span style="font-family: verdana, geneva, sans-serif; font-size: 12px;">Tables: Chúng rất tương tự như bảng (tables) trong RDBMS và chứa các dòng (rows). Hive chỉ được xếp lớp trên HDFS, do đó tables được ánh xạ trực tiếp vào các thư mục của hệ thống tập tin. Nó cũng hỗ trợ các tables được lưu trên các hệ thống tập tin khác. được cha</span></strong></a>
+<p style="text-align: justify;"><span style="font-family: verdana, geneva, sans-serif; font-size: 14px;">Có 2 loại bảng trong Hive đó là Managed Table (có trách nhiệm quản lý dữ liệu của một bảng) và External Table(không chịu trách nhiệm quản lý dữ liệu.)
+</span></p>
+</li>
+<li style="text-align: justify;"><a><strong><span style="font-family: verdana, geneva, sans-serif; font-size: 12px;">Partitions: Hive tables có thể có nhiều hơn 1 partition. Chúng được ánh xạ với các thư mục con và các hệ thống tập tin.</span></strong></a></li>
+<li style="text-align: justify;"><a><strong><span style="font-family: verdana, geneva, sans-serif; font-size: 12px;">Buckets: Trong Hive, dữ liệu có thể được chia thành các buckets. Buckets được lưu trữ như các tập tin trong partition trong hệ thống tập tin.</span></strong></a></li>
+</ul>
+
+
+
+<p style="text-align: justify;"><span style="font-family: verdana, geneva, sans-serif; font-size: 14px;">Command tạo cấu trúc như sau:</span></p>
+<ul>
+<li style="text-align: justify;"><a><strong><span style="font-family: verdana, geneva, sans-serif; font-size: 12px;">Managed Table: CREATE TABLE <table_name> (column1 data_type, column2 data_type);
+
+<p style="text-align: justify;"><span style="font-family: verdana, geneva, sans-serif; font-size: 14px;">
+LOAD DATA INPATH <HDFS_file_location> INTO table managed_table;
+</span></p>
+</span></strong></a></li>
+
+<li style="text-align: justify;"><a><strong><span style="font-family: verdana, geneva, sans-serif; font-size: 12px;">External Table:CREATE EXTERNAL TABLE <table_name> (column1 data_type, column2 data_type) LOCATION ‘<table_hive_location>’;
+<p style="text-align: justify;"><span style="font-family: verdana, geneva, sans-serif; font-size: 14px;">
+LOAD DATA INPATH ‘<HDFS_file_location>’ INTO TABLE <table_name>;
+</span></p>
+</span></strong></a></li>
+
+<li style="text-align: justify;"><a><strong><span style="font-family: verdana, geneva, sans-serif; font-size: 12px;">Partitions:CREATE TABLE table_name (column1 data_type, column2 data_type) PARTITIONED BY (partition1 data_type, partition2 data_type,….);
+</span></strong></a></li>
+<li style="text-align: justify;"><a><strong><span style="font-family: verdana, geneva, sans-serif; font-size: 12px;">Buckets: CREATE TABLE table_name PARTITIONED BY (partition1 data_type, partition2 data_type,….) CLUSTERED BY (column_name1, column_name2, …) SORTED BY (column_name [ASC|DESC], …)] INTO num_buckets BUCKETS;
+</span></strong></a></li>
+
+</ul>
+
+
+<p style="text-align: justify;"><span style="font-family: verdana, geneva, sans-serif; font-size: 14px;">Ví dụ về một cấu trúc dữ liệu trong HIVE 
+</span></p>
+<p style="text-align: justify;"><img class="aligncenter size-full wp-image-39181" src="./hinh7.png" ></p>
 
 </body>
 </html>
