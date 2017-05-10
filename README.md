@@ -3,11 +3,11 @@
 **Tên đề tài** là một repository trong đề tài tìm hiểu của lớp Chuyên đề chọn lọc trong Hệ thống thông tin.
 
 Thành viên:
-* [ ] **1312162** Phạm Văn Hà (HaPham1107)
-* [ ] **1312420** Nguyễn Đình Phát 
-* [ ] **1312422** Nguyễn Lê Duy Phát (NLDPhat)
+* [x ] **1312162** Phạm Văn Hà (HaPham1107)
+* [x] **1312420** Nguyễn Đình Phát 
+* [x] **1312422** Nguyễn Lê Duy Phát (NLDPhat)
 
-URL: **Link github page**
+URL: **https://nosql-2017.github.io/seminar-1312162-1312420-1312422-seminar-hive/**
 
 ## Yêu cầu
 
@@ -16,8 +16,8 @@ Sinh viên check vào các mục bên dưới và ghi mã sinh viên đã làm v
 Yêu cầu **GIT**
 * [x] Có sử dụng GIT.
 * [ ] Sử dụng GIT theo Centralized Workflow.
-* [ ] Sử dụng GIT theo Feature Branch Workflow.
-* [ ] Sử dụng GIT theo Gitflow Workflow.
+* [x] Sử dụng GIT theo Feature Branch Workflow.
+* [x] Sử dụng GIT theo Gitflow Workflow.
 
 Yêu cầu **bắt buộc**
 * [x] Source code demo
@@ -25,18 +25,23 @@ Yêu cầu **bắt buộc**
 * [x] Tạo github page để viết lại báo cáo cho nội dung đề tài tìm hiểu
 
 Các **nội dung lý thuyết** dự định tìm hiểu. Nhóm liệt kê các nội dung đã làm được vào bên dưới và check vào các nội dung đã tìm hiểu được.
-* [ ] Nội dung 1
-* [ ] Nội dung 2
+* [x] 1.Hive là gì?
+* [x] 2.Vì sao Hive ra đời?
+* [x] 3.MapReduce
+* [x] 4.Kiến trúc của Apache Hive và các thành phần liên quan
+* [x] 5.Cấu trúc dữ liệu lưu trữ trong Hive
 
 Các **chức năng của demo** đã thực hiện hoặc dự kiến thực hiện. Nhóm check vào các chức năng đã làm
-* [ ] Chức năng 1
-* [ ] Chức năng 2
+* [x] Chức năng 1: Tạo bảng trong Hive
+* [ ] Chức năng 2: Phân tích Json Data trong Hive
+* [ ] Chức năng 3: Phân tích log files trong Hive
+* [ ] Chức năng 4: Truy cập Hadoop Hive bảng dữ liệu từ ngôn ngữ R 
 
 ## Demo
 
 Link ảnh GIF demo ứng dụng:
 
-![Video Walkthrough](demo.gif)
+![Video Walkthrough]
 
 Tạo ảnh GIF với chương trình [LiceCap](http://www.cockos.com/licecap/).
 
