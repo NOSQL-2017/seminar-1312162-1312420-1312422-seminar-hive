@@ -4,7 +4,63 @@
   
    <body>
     
-    <h1>This is my first github page</h1>
+
+<h1>CHUYÊN ĐỀ CHỌN LỌC TRONG HỆ THỐNG THÔNG TIN</h1>
+<h2>Thông tin nhóm</h2>
+Phạm Văn Hà - 1312162
+Nguyễn Đình Phát - 1312420
+Nguyễn Lê Duy Phát - 1312422
+
+<h2>Thông tin về Hive</h2>
+Hive là một kho dữ liệu (data warehouse)  xử lý các dữ liệu dạng cấu trúc trên nền tảng Hadoop. 
+Sử dụng để tổng hợp, tạo truy vấn và phân tích dữ liệu.
+Hive có ngôn ngữ truy vấn được hỗ trợ truy xuất giống SQL (HiveQL / HQL)
+
+<h2>So sánh ngôn ngữ HiveQL và SQL</h2>
+	HIVE	SQL
+Phát triển 	Facebook	ISO/IEC(1986)
+Mục đích sử dụng	Báo cáo, truy xuất nhanh dữ liệu, trả lời những câu hỏi cần thiết, gần gũi với SQL	Quản lý dữ liệu quy mô vừa và nhỏ
+Ngôn ngữ 	HiveQL (SQL query)	SQL
+Cấu trúc dữ liệu	Có cấu trúc	Có cấu trúc
+Lược đồ quan hệ	Tường minh	Có
+Truy xuất dữ liệu	Chỉ có Insert, không có Update,Delete	Đầy đủ
+Hỗ trợ transanction	Không	Có
+Đánh chỉ số Index	Không	Có
+Kích thước dữ liệu	PetaByte
+(1,000,000 Gigabyte)	Gigabyte
+Được sử dụng bởi	Analysts	Programmers
+Làm việc trên	Server side(Thrift) trên 1 cluster	Client side trên 1 cluster
+MapReduce	Có	Không
+WebInterface	Có	Có
+
+Các doanh nghiệp muốn khai thác Big Data đòi hỏi phải xử lý và phân tích dữ liệu một cách nhanh chóng. Hive là một công cụ tuyệt vời cho việc truy vấn, phân tích tập dữ liệu lịch sử
+
+ 
+<h2>MapReduce</h2>
+MapReduce được thiết kế bởi Google như 1 mô hình lập trình xử lý tập dữ liệu lớn song song, thuật toán được phân tán trên 1 cụm.
+MapReduce gồm các thủ tục: 1 Map() và 1 Reduce(). 
+Thủ tục Map() lọc (filter) và phân loại (sort) trên dữ liệu 
+Thủ tục Reduce() thực hiện tổng hợp dữ liệu
+ 
+
+
+
+
+
+
+
+
+
+
+<h2>Kiến trúc của Apache Hive</h2>
+•	Interface(UI): Hive cung cấp một giao diện web để tương tác với HDFS. Tương tác command line.
+•	HDFS: lưu trữ dữ liệu.
+•	Meta store: Lưu thông tin cơ bản về cấu trúc dữ liệu. Các thông tin gồm ID của database (schema), ID của table, ID của index, định dạng của table, ...
+•	Hive QL: Tương tự như SQL, dùng để truy vấn dữ liệu dựa trên thông tin metastore cung cấp. Đây là phương pháp thay thế cho việc phải viết trương trình mapreduce truyền thống.
+•	Execution Engine: Chuyển hóa các lệnh Hive QL thành MapReduce	
+ 
+
+
   
   </body>
   
