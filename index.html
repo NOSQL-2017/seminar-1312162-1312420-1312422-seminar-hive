@@ -96,31 +96,26 @@ Ngày nay, xã hội càng phát triển nên nhu cầu sử dụng mạn
 <li style="text-align: justify;"><a><strong><span style="font-family: verdana, geneva, sans-serif; font-size: 12px;">Buckets: Trong Hive, dữ liệu có thể được chia thành các buckets. Buckets được lưu trữ như các tập tin trong partition trong hệ thống tập tin.</span></strong></a></li>
 </ul>
 
-
-
 <p style="text-align: justify;"><span style="font-family: verdana, geneva, sans-serif; font-size: 14px;">Command tạo cấu trúc như sau:</span></p>
 <ul>
-<li style="text-align: justify;"><a><strong><span style="font-family: verdana, geneva, sans-serif; font-size: 12px;">Managed Table: CREATE TABLE <table_name> (column1 data_type, column2 data_type);
-
-<p style="text-align: justify;"><span style="font-family: verdana, geneva, sans-serif; font-size: 14px;">
-LOAD DATA INPATH <HDFS_file_location> INTO table managed_table;
-</span></p>
+<li style="text-align: justify;"><a><strong><span style="font-family: verdana, geneva, sans-serif; font-size: 12px;">Managed Table: •	CREATE TABLE table_name> (column1 data_type, column2 data_type);
+		•	LOAD DATA INPATH HDFS_file_location> INTO table managed_table;"
 </span></strong></a></li>
 
-<li style="text-align: justify;"><a><strong><span style="font-family: verdana, geneva, sans-serif; font-size: 12px;">External Table:CREATE EXTERNAL TABLE <table_name> (column1 data_type, column2 data_type) LOCATION ‘<table_hive_location>’;
-<p style="text-align: justify;"><span style="font-family: verdana, geneva, sans-serif; font-size: 14px;">
-LOAD DATA INPATH ‘<HDFS_file_location>’ INTO TABLE <table_name>;
-</span></p>
+<li style="text-align: justify;"><a><strong><span style="font-family: verdana, geneva, sans-serif; font-size: 12px;">External Table:•	CREATE EXTERNAL TABLE table_name> (column1 data_type, column2 data_type) LOCATION ‘table_hive_location>’;
+	•	LOAD DATA INPATH HDFS_file_location>’ INTO TABLE table_name>;
+
 </span></strong></a></li>
 
-<li style="text-align: justify;"><a><strong><span style="font-family: verdana, geneva, sans-serif; font-size: 12px;">Partitions:CREATE TABLE table_name (column1 data_type, column2 data_type) PARTITIONED BY (partition1 data_type, partition2 data_type,….);
+<li style="text-align: justify;"><a><strong><span style="font-family: verdana, geneva, sans-serif; font-size: 12px;">Partitions: 
+•	CREATE TABLE table_name (column1 data_type, column2 data_type) PARTITIONED BY (partition1 data_type, partition2 data_type,….);
 </span></strong></a></li>
-<li style="text-align: justify;"><a><strong><span style="font-family: verdana, geneva, sans-serif; font-size: 12px;">Buckets: CREATE TABLE table_name PARTITIONED BY (partition1 data_type, partition2 data_type,….) CLUSTERED BY (column_name1, column_name2, …) SORTED BY (column_name [ASC|DESC], …)] INTO num_buckets BUCKETS;
+<li style="text-align: justify;"><a><strong><span style="font-family: verdana, geneva, sans-serif; font-size: 12px;">Buckets: 
+•	CREATE TABLE table_name PARTITIONED BY (partition1 data_type, partition2 data_type,….) CLUSTERED BY (column_name1, column_name2, …) SORTED BY (column_name [ASC|DESC], …)] INTO num_buckets BUCKETS;
 </span></strong></a></li>
 
 </ul>
-
-
+	
 <p style="text-align: justify;"><span style="font-family: verdana, geneva, sans-serif; font-size: 14px;">Ví dụ về một cấu trúc dữ liệu trong HIVE 
 </span></p>
 <p style="text-align: justify;"><img class="aligncenter size-full wp-image-39181" src="./hinh7.png" ></p>
